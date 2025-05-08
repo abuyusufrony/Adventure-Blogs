@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiLock, FiMail } from 'react-icons/fi';
+import { Link } from 'react-router';
 
 const Login = () => {
 
@@ -53,9 +54,9 @@ const Login = () => {
 
                 <p className="text-sm text-center text-gray-500 mt-6">
                     Don’t have an account?{" "}
-                    <a href="#" className="text-indigo-600 hover:underline">
+                    <Link to={'/register'} href="#" className="text-indigo-600 hover:underline">
                         Register
-                    </a>
+                    </Link>
                 </p>
             </div>
         </div>
