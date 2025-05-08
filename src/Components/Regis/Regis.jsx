@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FiImage, FiLock, FiMail, FiUser } from 'react-icons/fi';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { Authcontext } from '../../Auth/AuthProvider';
 
 const Regis = () => {
+    const [erorr, seterror] = useState([])
+    const nav = useNavigate()
 
     const { createuser, setuser } = useContext(Authcontext)
 
@@ -13,6 +15,11 @@ const Regis = () => {
 
         const form = new FormData(e.target);
         const nam = form.get('name');
+        if (nam.length < 5) {
+            seterror({ ...erorr, name: "Name MustBe 5 character" })
+            return;
+
+        }
         const pic = form.get('photo');
         const mail = form.get('email');
         const pass = form.get('password');
@@ -22,6 +29,7 @@ const Regis = () => {
                 const use = res.user
                 setuser(use)
                 console.log('user are created ', use)
+                nav('/')
             })
             .catch((err) => {
                 console.log("Error are ", err)
@@ -46,6 +54,9 @@ const Regis = () => {
                             required
                         />
                     </div>
+                    {
+                        erorr.name && <p className='text-red-500 text-sm'>{erorr.name}</p>
+                    }
 
                     {/* Photo URL */}
                     <div className="flex items-center border border-gray-300 rounded-lg px-4 py-2 focus-within:ring-2 focus-within:ring-purple-400">

@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FiLock, FiMail } from 'react-icons/fi';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { Authcontext } from '../../Auth/AuthProvider';
 
 const Login = () => {
+    const [error, seterror] = useState([])
     const { loginuser, setuser } = useContext(Authcontext)
     const loaction = useLocation()
     const nav = useNavigate()
@@ -27,6 +28,7 @@ const Login = () => {
             })
             .catch((err) => {
                 console.log("Error are ", err)
+                seterror({ ...error, login: err.code })
             })
 
     }
@@ -61,6 +63,11 @@ const Login = () => {
                             required
                         />
                     </div>
+                    {
+
+                        error.login && <p className='text-red-500 text-center'>{error.login}</p>
+
+                    }
 
                     <button
                         type="submit"
