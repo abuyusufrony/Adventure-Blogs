@@ -13,12 +13,13 @@ const Banner = () => {
                 <div className="hero-overlay"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Reconnect with Nature</h1>
 
-                        <p className="mb-5">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+
+                        <p className="text-lg md:text-xl text-white/80">
+                            Dive into untamed destinations, guided by experts who love nature as much as you do. It's time to hike, paddle, and roam far from the familiar.
                         </p>
+
 
                     </div>
                 </div>
