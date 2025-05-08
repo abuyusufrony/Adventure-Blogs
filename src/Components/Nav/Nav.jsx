@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router';
+import { Authcontext } from '../../Auth/AuthProvider';
+import { auth } from '../../Firebase/Firebase.int';
 
 const Nav = () => {
+    const { user, logout } = useContext(Authcontext)
     const link = <>
         <Link> <li><a>Home</a></li></Link>
         <Link> <li><a>About</a></li></Link>
         <Link> <li><a>Profile</a></li></Link>
     </>
+
+    const handlelogout = () => {
+        console.log("Logout Butoon clicked")
+        logout(auth)
+    }
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -21,15 +29,23 @@ const Nav = () => {
                     </ul>
                 </div>
                 <Link to={'/'} className="btn btn-ghost text-xl">TourLand</Link>
+                {
+                    user && user?.email ? user.email : <span className='text-red-500'>No user</span>
+                }
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {link}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <Link to={'/login'} className="btn">Login</Link>
-            </div>
+            {
+                user && user?.email ? <div className="navbar-end">
+                    <Link onClick={handlelogout} className="btn">SingOut</Link>
+                </div> :
+                    <div className="navbar-end">
+                        <Link to={'/login'} className="btn">Login</Link>
+                    </div>
+            }
         </div>
     );
 };

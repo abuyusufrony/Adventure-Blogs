@@ -5,6 +5,7 @@ import Home from '../Components/HOme/Home';
 import ViewBlogs from '../Components/ViewBlogs/ViewBlogs';
 import Login from '../Components/Login/Login';
 import Regis from '../Components/Regis/Regis';
+import PrivateRoute from './PrivateRoute';
 
 const Router = createBrowserRouter([{
     path: '/',
@@ -17,7 +18,9 @@ const Router = createBrowserRouter([{
         {
 
             path: '/:id',
-            element: <ViewBlogs></ViewBlogs>,
+            element: <PrivateRoute>
+                <ViewBlogs></ViewBlogs>
+            </PrivateRoute>,
             loader: () => fetch('/place.json')
 
         },

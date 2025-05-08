@@ -1,20 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiImage, FiLock, FiMail, FiUser } from 'react-icons/fi';
 import { Link } from 'react-router';
+import { Authcontext } from '../../Auth/AuthProvider';
 
 const Regis = () => {
 
+    const { createuser, setuser } = useContext(Authcontext)
 
 
     const handleRegister = (e) => {
         e.preventDefault();
 
         const form = new FormData(e.target);
-        const nam = form.get('name')
-        const pic = form.get('photo')
-        const mail = form.get('email')
-        const pass = form.get('password')
-        console.log({ nam, pic, mail, pass })
+        const nam = form.get('name');
+        const pic = form.get('photo');
+        const mail = form.get('email');
+        const pass = form.get('password');
+
+        createuser(mail, pass)
+            .then((res) => {
+                const use = res.user
+                setuser(use)
+                console.log('user are created ', use)
+            })
+            .catch((err) => {
+                console.log("Error are ", err)
+            })
     }
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 px-4">

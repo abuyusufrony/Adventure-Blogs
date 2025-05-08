@@ -6,7 +6,7 @@ const Places = ({ allpalces }) => {
     const { image, adventureTitle, location, adventureCost, id } = allpalces;
 
     return (
-        <div className="max-w-sm mx-auto shadow-xl rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 bg-base-100 mb-5 p-2">
+        <div className="max-w-sm mx-auto shadow-xl rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 bg-base-100  ">
             <figure className="relative">
                 <img
                     src={image}

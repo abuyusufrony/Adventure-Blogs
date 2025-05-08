@@ -19,7 +19,7 @@ const Place = () => {
                 Explore Our Top <span className="text-purple-600">Adventure Tours</span>
             </h2>
 
-            <div className=' grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  '>
+            <div className=' grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-5  '>
                 {
                     place.map(p => (<Places allpalces={p}></Places>))
                 }

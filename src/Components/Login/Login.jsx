@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiLock, FiMail } from 'react-icons/fi';
 import { Link } from 'react-router';
+import { Authcontext } from '../../Auth/AuthProvider';
 
 const Login = () => {
+    const { loginuser, setuser } = useContext(Authcontext)
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -11,6 +13,17 @@ const Login = () => {
         const mail = from.get('email')
         const pass = from.get('password')
         console.log({ mail, pass })
+        loginuser(mail, pass)
+            .then((res) => {
+                const re = res.user
+                setuser(re)
+                console.log('user are login ', re)
+
+            })
+            .catch((err) => {
+                console.log("Error are ", err)
+            })
+
     }
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4">
