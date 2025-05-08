@@ -1,0 +1,253 @@
+[
+    {
+        "id": 1,
+        "adventureTitle": "Himalayan Mountain Trek",
+        "image": "https://res.cloudinary.com/enchanting/q_80,f_auto,c_fit,w_640,h_480/exodus-web/2021/12/trekking-poles-himalaya.jpg",
+        "shortDescription": "An exhilarating 7-day high-altitude trek through the snow-capped peaks and rugged trails of the Himalayas, offering breathtaking views and an unmatched challenge.",
+        "adventureCost": 450,
+        "bookingAvailability": true,
+        "location": "Manali, India",
+        "duration": "7 Days",
+        "adventureLevel": "Hard",
+        "includedItems": [
+            "Guide",
+            "Tents",
+            "Meals",
+            "First Aid"
+        ],
+        "ecoFriendlyFeatures": [
+            "Plastic-free",
+            "Solar-powered camps",
+            "Leave No Trace"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Carry thermal wear",
+            "Avoid plastic bottles",
+            "Respect local wildlife"
+        ]
+    },
+    {
+        "id": 2,
+        "adventureTitle": "Great Barrier Reef Dive",
+        "image": "https://d3iw2xw44569er.cloudfront.net/images/destinations/60/34955/MikeBall-10.jpg",
+        "shortDescription": "Dive into the world’s largest coral reef system, exploring vibrant marine life, crystal-clear waters, and eco-conscious underwater adventures over 3 thrilling days.",
+        "adventureCost": 600,
+        "bookingAvailability": true,
+        "location": "Queensland, Australia",
+        "duration": "3 Days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Scuba Gear",
+            "Instructor",
+            "Boat Transfers"
+        ],
+        "ecoFriendlyFeatures": [
+            "Coral-safe sunscreen",
+            "Eco-certified boats",
+            "Marine waste disposal"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "No touching coral",
+            "Use reef-safe sunscreen",
+            "Follow diving guidelines"
+        ]
+    },
+    {
+        "id": 3,
+        "adventureTitle": "Serengeti Wildlife Safari",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvMjDFyl4AHBMR8RbtUfUT15zrfH2wJeV2JLwxPGSsyg&s&ec=72940543",
+        "shortDescription": "Experience the untamed wilderness of Tanzania on a guided jeep safari, witnessing the Big Five and stunning sunsets across the golden plains of Serengeti.",
+        "adventureCost": 700,
+        "bookingAvailability": false,
+        "location": "Tanzania",
+        "duration": "5 Days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Jeep Tours",
+            "Guide",
+            "Accommodation",
+            "Meals"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar camps",
+            "No plastic policy",
+            "Local guides"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+            "Do not feed animals",
+            "Remain in vehicle",
+            "Respect local customs"
+        ]
+    },
+    {
+        "id": 4,
+        "adventureTitle": "Amazon Forest Expedition",
+        "image": "https://www.machupicchu.org/wp-content/uploads/Amazon-rainforest-expeditions-2025.jpg",
+        "shortDescription": "Explore the biodiversity of the Amazon Rainforest with expert guides. Encounter exotic wildlife, indigenous plants, and rich ecosystems on this 6-day immersive journey.",
+        "adventureCost": 650,
+        "bookingAvailability": true,
+        "location": "Brazil",
+        "duration": "6 Days",
+        "adventureLevel": "Hard",
+        "includedItems": [
+            "Guide",
+            "Camp Gear",
+            "Bug Repellent",
+            "Raincoat"
+        ],
+        "ecoFriendlyFeatures": [
+            "Zero-waste meals",
+            "Biodegradable toiletries",
+            "Local sourcing"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Get vaccinated",
+            "Stay with group",
+            "Use insect repellent"
+        ]
+    },
+    {
+        "id": 5,
+        "adventureTitle": "Himalayan Camping Retreat",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw51K3GBykMcWuYNJkrCmp04H_j5op4dpA1hubBPIJWA&s&ec=72940543",
+        "shortDescription": "Unwind in tranquil Himalayan meadows during this 4-day nature retreat with starlit skies, warm bonfires, and cozy camping surrounded by mountain serenity.",
+        "adventureCost": 300,
+        "bookingAvailability": true,
+        "location": "Leh, India",
+        "duration": "4 Days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Tents",
+            "Sleeping Bags",
+            "Bonfire",
+            "Local Meals"
+        ],
+        "ecoFriendlyFeatures": [
+            "Compost toilets",
+            "Solar lanterns",
+            "Locally sourced food"
+        ],
+        "maxGroupSize": 12,
+        "specialInstructions": [
+            "Pack warm clothes",
+            "No littering",
+            "Stay hydrated"
+        ]
+    },
+    {
+        "id": 6,
+        "adventureTitle": "Ganges River Rafting",
+        "image": "https://static.toiimg.com/photo/msid-78363641,width-96,height-65.cms",
+        "shortDescription": "Ride the rapids of the holy Ganges in Rishikesh. A thrilling 2-day rafting journey combining adventure, spirituality, and sustainable river travel.",
+        "adventureCost": 250,
+        "bookingAvailability": true,
+        "location": "Rishikesh, India",
+        "duration": "2 Days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Raft",
+            "Life Jacket",
+            "Helmet",
+            "Guide"
+        ],
+        "ecoFriendlyFeatures": [
+            "River clean-up initiative",
+            "Reusable gear",
+            "Eco-safety training"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Wear safety gear",
+            "Avoid plastics",
+            "Follow instructions strictly"
+        ]
+    },
+    {
+        "id": 7,
+        "adventureTitle": "Sahara Desert Exploration",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAqiCrSprDzlsJdq9lNLf3R6d8VktGfHCEdcl4S0v5A&s&ec=72940543",
+        "shortDescription": "Embark on a 5-day camel safari across the sweeping dunes of the Sahara, with starlit camps, desert cultures, and breathtaking sunrises.",
+        "adventureCost": 550,
+        "bookingAvailability": true,
+        "location": "Morocco",
+        "duration": "5 Days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Camel Rides",
+            "Tents",
+            "Local Meals",
+            "Guide"
+        ],
+        "ecoFriendlyFeatures": [
+            "Low-impact travel",
+            "No plastic bottles",
+            "Local employment"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+            "Protect from sun",
+            "Carry water",
+            "Respect nomadic tribes"
+        ]
+    },
+    {
+        "id": 8,
+        "adventureTitle": "Sundarbans Mangrove Expedition",
+        "image": "https://www.sundarbantigerroarresort.com/wp-content/uploads/2023/11/ed5ecf37-4c4d-41fc-8c36-107628a70132.jpg",
+        "shortDescription": "Navigate the lush mangroves of the Sundarbans on a guided eco-boat tour. Spot rare wildlife and learn about this fragile and fascinating ecosystem.",
+        "adventureCost": 500,
+        "bookingAvailability": true,
+        "location": "West Bengal, India",
+        "duration": "4 Days",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Boat Ride",
+            "Local Guide",
+            "Meals",
+            "Binoculars"
+        ],
+        "ecoFriendlyFeatures": [
+            "Mangrove replanting",
+            "Eco boats",
+            "Wildlife protection policies"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Avoid flash photography",
+            "Do not enter restricted zones",
+            "Follow guide’s lead"
+        ]
+    },
+    {
+        "id": 9,
+        "adventureTitle": "Zambezi River Canoe Adventure",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlKZH8FsCwXtzsu7CQfTXffqKXpfvwMyLRG9V9dRtS1Q&s&ec=72940543",
+        "shortDescription": "Canoe through the wild waters of the Zambezi over 3 days, encountering hippos, crocodiles, and stunning scenery on a raw, off-grid African adventure.",
+        "adventureCost": 480,
+        "bookingAvailability": false,
+        "location": "Zambia",
+        "duration": "3 Days",
+        "adventureLevel": "Hard",
+        "includedItems": [
+            "Canoe",
+            "Safety Gear",
+            "Guide",
+            "Camping Gear"
+        ],
+        "ecoFriendlyFeatures": [
+            "Minimal motor use",
+            "Wildlife-safe routes",
+            "Reusable supplies"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+            "Be alert for wildlife",
+            "Pack light",
+            "Stick to designated campsites"
+        ]
+    }
+]
