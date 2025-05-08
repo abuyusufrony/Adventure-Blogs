@@ -28,7 +28,13 @@ const Nav = () => {
                         {link}
                     </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost text-xl">TourLand</Link>
+                {/* <Link
+                    to="/"
+                    className="text-xl font-bold mr-4 bg-gradient-to-r from-[#4ade80] via-[#22d3ee] to-[#6366f1] bg-clip-text text-transparent transition-all duration-300 hover:from-[#f472b6] hover:via-[#c084fc] hover:to-[#60a5fa]"
+                >
+                    TourLand
+                </Link> */}
+                <Link to={'/'} className="btn btn-ghost   text-xl font-bold mr-4 bg-gradient-to-r from-[#4ade80] via-[#22d3ee] to-[#6366f1] bg-clip-text text-transparent transition-all duration-300 hover:from-[#f472b6] hover:via-[#c084fc] hover:to-[#60a5fa] ">TourLand</Link>
                 {
                     user && user?.email ? user.email : <span className='text-red-500'>No user</span>
                 }
@@ -38,14 +44,33 @@ const Nav = () => {
                     {link}
                 </ul>
             </div>
-            {
+            {/* {
                 user && user?.email ? <div className="navbar-end">
                     <Link onClick={handlelogout} className="btn">SingOut</Link>
                 </div> :
                     <div className="navbar-end">
                         <Link to={'/login'} className="btn">Login</Link>
                     </div>
-            }
+            } */}
+            {user && user?.email ? (
+                <div className="navbar-end">
+                    <Link
+                        onClick={handlelogout}
+                        className="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-500 hover:to-pink-500 transition-all duration-300 shadow-md"
+                    >
+                        Sign Out
+                    </Link>
+                </div>
+            ) : (
+                <div className="navbar-end">
+                    <Link
+                        to="/login"
+                        className="px-4 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 transition-all duration-300 shadow-md"
+                    >
+                        Login
+                    </Link>
+                </div>
+            )}
         </div>
     );
 };

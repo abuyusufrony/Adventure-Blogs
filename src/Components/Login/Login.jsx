@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
 import { FiLock, FiMail } from 'react-icons/fi';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { Authcontext } from '../../Auth/AuthProvider';
 
 const Login = () => {
     const { loginuser, setuser } = useContext(Authcontext)
+    const loaction = useLocation()
+    const nav = useNavigate()
+
 
     const handleLogin = (e) => {
+
         e.preventDefault();
         console.log("Login value are adding soon")
         const from = new FormData(e.target);
@@ -18,6 +22,7 @@ const Login = () => {
                 const re = res.user
                 setuser(re)
                 console.log('user are login ', re)
+                nav(loaction?.state ? loaction.state : '/')
 
             })
             .catch((err) => {

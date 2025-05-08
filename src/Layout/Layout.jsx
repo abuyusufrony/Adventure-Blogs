@@ -4,7 +4,7 @@ import Nav from '../Components/Nav/Nav';
 
 const Layout = () => {
     return (
-        <div className=''>
+        <div className='w-11/12 mx-auto'>
 
             <Nav></Nav>
             <Outlet></Outlet>
