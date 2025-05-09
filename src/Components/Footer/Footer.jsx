@@ -28,9 +28,7 @@ const Footer = () => {
                             <li>
                                 <a rel="noopener noreferrer" href="#">Pricing</a>
                             </li>
-                            <li>
-                                <a rel="noopener noreferrer" href="#">FAQ</a>
-                            </li>
+
                         </ul>
                     </div>
                     <div className="space-y-3">
