@@ -43,5 +43,45 @@ TourLand is designed to inspire and assist travelers in finding and learning mor
 
 ---
 
+## 🧪 How to Run Locally
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/tourland.git
+   cd tourland
+
 ## 🛠️ Project Structure (Key Files)
+
+tourland/
+├── public/
+│   └── index.html
+├── src/
+│   ├── Auth/
+│   │   └── AuthProvider.jsx
+│   ├── Components/
+│   │   └── Places.jsx
+│   ├── Firebase/
+│   │   └── Firebase.int.js
+│   ├── Layout/
+│   │   └── MainLayout.jsx
+│   ├── Pages/
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── ViewBlogs.jsx
+│   │   └── Loading.jsx
+│   ├── PrivateRoute/
+│   │   └── PrivateRoute.jsx
+│   ├── Router/
+│   │   └── Routes.jsx
+│   ├── place.json
+│   ├── main.jsx
+│   └── App.css
+├── .gitignore
+├── index.css
+├── package.json
+├── README.md
+└── vite.config.js
+
+
 
