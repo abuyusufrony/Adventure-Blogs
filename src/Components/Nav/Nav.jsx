@@ -6,7 +6,7 @@ import { auth } from '../../Firebase/Firebase.int';
 const Nav = () => {
     const { user, logout } = useContext(Authcontext)
     const link = <>
-        <Link> <li><a>Home</a></li></Link>
+        <Link to={'/'}> <li ><a>Home</a></li></Link>
         <Link> <li><a>About</a></li></Link>
         <Link> <li><a>Profile</a></li></Link>
     </>
